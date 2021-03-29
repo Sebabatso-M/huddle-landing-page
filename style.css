@@ -20,6 +20,19 @@ body {
     position: relative;
 }
 
+a {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+a:active .fab {
+    background: var(--s-magenta);
+    border-color: var(--s-magenta);
+}
+
 /*===================
     Typography
 ===================*/
@@ -58,6 +71,7 @@ body {
     box-shadow: 0 4px 2px rgba(0, 0, 0, 0.171);
     color: var(--violet);
     cursor: pointer;
+    transition: 0.2s;
 }
 
 .button:active {
@@ -138,9 +152,9 @@ body {
 /* screens 1024px and up */
 @media screen and (min-width:64em) {
 
-body {
-    font-size: 1.125rem;
-}
+    body {
+        font-size: 1.125rem;
+    }
 
     /* container of the text content */
     /* heading of container*/
@@ -198,13 +212,9 @@ body {
     height: 30px;
 }
 
-/* image container */
-.illustration {
-    margin-bottom: 3.6785rem;
-}
-
 /* image of devices */
-.illustration__img {
+.illustration-img {
+    margin-bottom: 3.6785rem;
     max-width: 100%
 }
 
@@ -216,6 +226,10 @@ body {
     margin: 0 auto;
     margin-bottom: 2.5rem;
     cursor: pointer;
+}
+
+.fab {
+    transition: 0.2s;
 }
 
 .fab:hover {
@@ -249,8 +263,8 @@ body {
         height: 35px;
     }
 
-    /* image container */
-    .illustration {
+    /* image of devices*/
+    .illustration-img {
         margin-bottom: 4.25rem;
     }
 }
@@ -268,8 +282,8 @@ body {
         height: 40px;
     }
 
-    /* image container */
-    .illustration {
+    /* image of devices */
+    .illustration-img {
         margin-bottom: 4.5rem;
     }
 
@@ -328,7 +342,7 @@ body {
     .socials {
         position: absolute;
         right: 3%;
-        bottom: -9%;
+        bottom: 0;
         margin: 0;
     }
 }
