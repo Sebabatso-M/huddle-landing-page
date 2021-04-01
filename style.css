@@ -342,7 +342,7 @@ a:active .fab {
     .socials {
         position: absolute;
         right: 3%;
-        bottom: 0;
+        bottom: 1.5rem;
         margin: 0;
     }
 }
